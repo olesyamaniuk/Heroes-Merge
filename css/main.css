@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Comme:wght@100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Viga&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gantari:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 :root {
 }
@@ -10,8 +10,8 @@
 
 html {
   scroll-behavior: smooth;
-  background: #ffbb5b;
-  color: #000000;
+  background: #ffffff;
+  color: #181b1d;
 }
 
 body {
@@ -93,8 +93,7 @@ a {
   background: transparent;
   display: flex;
   height: 64px;
-  background: #297d17;
-  box-shadow: 4px 7px 9px 0px #00000040;
+  background: #6913c0;
 }
 
 .header__background {
@@ -107,8 +106,7 @@ a {
   z-index: -1;
   -webkit-transition: left 0.3s ease;
   transition: left 0.3s ease;
-  background: #297d17;
-  box-shadow: 4px 7px 9px 0px #00000040;
+  background: #6913c0;
 }
 .header.is-open .header__background {
   left: 0;
@@ -159,7 +157,7 @@ a {
   -webkit-box-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  padding: 12px;
+  padding: 10px;
   position: relative;
 }
 
@@ -167,8 +165,7 @@ a {
   display: flex;
   flex-direction: column;
 
-  align-items: center;
-
+  align-items: start;
   top: 130px;
   position: absolute;
   top: 100%;
@@ -179,31 +176,28 @@ a {
   transition: 0.3s;
   z-index: 999;
 
-  padding: 0px 32px;
-
-  border-radius: 0px 0px 20px 20px;
+  padding: 24px;
   gap: 28px;
-  background: #ffc16b;
-  box-shadow: 0px 9px 16px 0px #00000040;
+  background: #6913c0;
 }
 .navigation__list.is-open {
   right: 0;
 }
 .navigation__link {
-  font-family: Lora;
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 22px;
-  text-align: center;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 110.00000000000001%;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+
   transition: all 0.3s ease-in-out;
   text-decoration: none;
-  color: #482600;
+  color: #ffffff;
 }
 .navigation__link:hover,
 .navigation__link:focus {
-  color: #297d17;
+  font-size: 18px;
 }
 .header.is-open {
   background-color: transparent;
@@ -223,7 +217,7 @@ a {
   .header {
     width: 100%;
 
-    height: 90px;
+    height: 50px;
     padding: 10px 0px 10px 20px;
     display: flex;
     align-items: center;
@@ -259,7 +253,7 @@ a {
 
     padding-block: 0;
     flex: 1;
-    gap: 13px;
+    gap: 20px;
     height: 0px;
     display: flex;
     justify-content: center;
@@ -267,14 +261,13 @@ a {
     justify-content: center;
   }
   .navigation__link {
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 22px;
-    text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-    color: #fae599;
-    padding: 12px 24px 12px 24px;
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 110.00000000000001%;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+    padding: 0 30px;
     text-decoration: none;
   }
   .navigation__link:hover,
@@ -291,8 +284,8 @@ a {
 
 .home {
   width: 375px;
-  height: 742px;
-  padding: 182px 16px 0px;
+  height: 930px;
+  padding: 92px 16px 0px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -306,36 +299,32 @@ a {
   align-items: start;
 }
 .home-title {
-  font-family: Viga;
-  font-size: 46px;
-  font-weight: 900;
-  line-height: 50.4px;
-  text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
-  -webkit-text-stroke: 1px#FFFFFF;
-  color: #482600;
+  font-family: Gantari;
+  font-weight: 800;
+  font-size: 66px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+
+  color: #fffdfd;
 }
 
 .home-text {
-  font-family: Lora;
-  font-size: 22px;
-  font-weight: 500;
-  line-height: 26.4px;
-  text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
+  font-family: Gantari;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+  color: #fffdfd;
 
-  color: #000000;
-  padding: 32px 0;
-  width: 253px;
+  padding: 16px 0 24px;
 }
 .home__google-button_image {
-  width: 200px;
-  height: 60px;
+  width: 170px;
+  height: 56px;
 }
 .home__google-button_link:hover .home__google-button_image {
-  /* content: url("./image/home/Button-hover.png"); */
   transform: scale(1.1);
   transition: transform 0.3s ease-in-out;
 }
@@ -343,407 +332,398 @@ a {
 @media screen and (min-width: 1200px) {
   .home {
     width: 1440px;
-    height: 784px;
-    padding: 204px 0px 0px;
+    height: 943px;
+    padding: 176px 150px 0px;
     background-image: url("/img/home/Home\ \(1\).png");
   }
-  .home__container-top {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  .home-title {
-    font-family: Viga;
-    font-size: 52px;
-    font-weight: 900;
-    line-height: 62.4px;
-    text-align: center;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
 
-    width: 404px;
+  .home-title {
+    font-family: Gantari;
+    font-weight: 800;
+    font-size: 66px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: uppercase;
   }
 
   .home-text {
-    font-family: Lora;
-    font-size: 26px;
-    font-weight: 500;
-    line-height: 31.2px;
-    text-align: center;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-    width: 400px;
-    padding: 29px 0;
+    font-family: Gantari;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+
+    padding: 24px 0 40px;
   }
 }
 .why {
   width: 375px;
-  height: 1085px;
+  height: 1680px;
   margin: auto;
-  padding: 77px 15px 0;
+  padding: 40px 16px 0;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
-  background-image: url("/img/why/Why\ Choose\ Merge\ Food\ -\ Chef\ Decoration_.png");
+  background-position: top;
+  background-image: url("/img/why/Features\ -\ Reviews.png");
 }
 
 .why-list {
-  padding-top: 67px;
+  padding-top: 32px;
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 8px;
 }
 .why-item {
   width: 343px;
-  height: 150px;
-  padding: 31px 16px;
-  border-radius: 20px;
-  background: #ffffff99;
-  display: flex;
-  gap: 16px;
-  align-items: center;
+  height: 240px;
+  padding-top: 32px;
+  padding-right: 24px;
+  padding-bottom: 32px;
+  padding-left: 24px;
+  border-radius: 4px;
+  background: #ffffff;
+  box-shadow: 0px 4px 30px 0px #00000040;
 }
-
-.why-text-bold {
-  font-family: Lora;
-  font-size: 18px;
+.why-number {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url("/img/why/Number\ \(1\).png");
+  width: 34px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Montserrat;
   font-weight: 600;
-  line-height: 21.6px;
-  text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
+  font-size: 14px;
+  line-height: 140%;
+  letter-spacing: 0%;
+  color: #defc38;
+}
+.why-number-two {
+  background-image: url("/img/why/Number\ \(3\).png");
+  color: #defc38;
+}
+.why-number-three {
+  color: #0a6bff;
+  background-image: url("/img/why/Number\ \(4\).png");
+}
+.why-text-bold {
+  font-family: Gantari;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+  padding: 40px 0 16px;
 }
 .why-text {
-  padding-top: 8px;
-  font-family: Lora;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 19.2px;
-  text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 142%;
+  letter-spacing: 0%;
+  color: #7c8085;
 }
 @media screen and (min-width: 1200px) {
   .why {
     width: 1440px;
-    height: 700px;
-    padding: 91px 189px 0;
-    background-image: url("/img/why/Why\ Choose\ Merge\ Food\ -\ Chef\ Decoration_\ \(1\).png");
+    height: 844px;
+    padding: 100px 150px 0;
+    background-image: url("/img/why/Features\ -\ Reviews\ \(1\).png");
   }
-}
-.uniqueness {
-  width: 375px;
-  height: 868px;
-  margin: auto;
-  padding: 64px 16px 0;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-image: url("/img/uniqueness/What\ Makes\ the\ Game\ Unique_.png");
-}
+  .why-list {
+    padding-top: 60px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+  .why-item {
+    width: 364px;
+    height: 240px;
+    padding-top: 32px;
+    padding-right: 24px;
+    padding-bottom: 32px;
+    padding-left: 24px;
+    border-radius: 4px;
+  }
+  .why-number {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url("/img/why/Number\ \(1\).png");
+    width: 34px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 140%;
+    letter-spacing: 0%;
+    color: #defc38;
+  }
+  .why-number-two {
+    background-image: url("/img/why/Number\ \(3\).png");
+    color: #defc38;
+  }
+  .why-number-three {
+    color: #0a6bff;
+    background-image: url("/img/why/Number\ \(4\).png");
+  }
+  .why-text-bold {
+    font-family: Gantari;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: uppercase;
 
-.uniqueness-list {
-  padding-top: 54px;
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
-}
-
-.uniqueness-text-bold {
-  font-family: Lora;
-  font-size: 18px;
-  font-weight: 600;
-  line-height: 21.6px;
-  text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
-}
-.uniqueness-text {
-  padding-top: 12px;
-  font-family: Lora;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 19.2px;
-  text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
-}
-@media screen and (min-width: 1200px) {
-  .uniqueness {
-    width: 1440px;
-    height: 700px;
-    padding: 72px 408px 0;
-
-    background-image: url("/img/uniqueness/What\ Makes\ the\ Game\ Unique_\ \(1\).png");
+    padding: 40px 0 16px;
+  }
+  .why-text {
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 142%;
+    letter-spacing: 0%;
   }
 }
 .about {
-  padding: 64px 16px 0px;
+  padding: 40px 16px;
   margin: auto;
   width: 375px;
-  height: 574px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-image: url("/img/about/About\ the\ Game.png");
+  background: #6913c0;
 }
 
 .about-title {
-  font-family: Lora;
-  font-size: 22px;
-  font-weight: 900;
-  line-height: 26.4px;
-  text-align: center;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
-  -webkit-text-stroke: 1px#FFFFFF99;
-  color: #297d17;
+  font-family: Gantari;
+  font-weight: 800;
+  font-size: 46px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+
+  color: #defc38;
 }
 
 .about-text {
-  font-family: Lora;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 22.4px;
-  text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
-
-  padding: 69px 0px 0;
-}
-.about-text-bold {
-  font-family: Lora;
+  font-family: Montserrat;
+  font-weight: 500;
   font-size: 18px;
-  font-weight: 600;
-  line-height: 25.2px;
-  text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
+  line-height: 142%;
+  letter-spacing: 0%;
+  color: #ffffff;
+  padding: 32px 0px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
+
 @media screen and (min-width: 1200px) {
   .about {
-    padding: 66px 408px 0;
+    padding: 100px 150px 120px;
     width: 1440px;
-    height: 493px;
-    background-image: url("/img/about/About\ the\ Game\ \(1\).png");
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  .about-title {
+    font-family: Gantari;
+    font-weight: 800;
+    font-size: 46px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+  }
+
+  .about-text {
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 142%;
+    letter-spacing: 0%;
+
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 692px;
   }
 }
 .how {
   width: 375px;
-  height: 1191px;
+  height: 2348px;
   margin: auto;
-  padding: 64px 16px 0;
+  padding: 40px 16px 0;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-image: url("/img/how/How\ to\ Play.png");
+  background-image: url("/img/How\ to\ play.png");
 }
 
 .how-list {
-  padding-top: 54px;
+  padding-top: 32px;
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 8px;
 }
 .how-item {
-  width: 343px;
-  height: 192px;
+  width: 350px;
+  height: 350px;
+  padding: 125px 34px 0;
 }
-.how-img {
-  margin: auto;
-}
-.how-text-bold {
-  padding: 12px 0;
 
-  font-family: Lora;
-  font-size: 20px;
-  font-weight: 600;
-  line-height: 24px;
+.how-text-bold {
+  font-family: Gantari;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 0%;
   text-align: center;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
+  text-transform: uppercase;
 }
 .how-text {
-  font-family: Lora;
+  font-family: Montserrat;
+  font-weight: 500;
   font-size: 18px;
-  font-weight: 400;
-  line-height: 21.6px;
+  line-height: 142%;
+  letter-spacing: 0%;
   text-align: center;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
+  color: #7c8085;
+  padding-top: 16px;
 }
 
 @media screen and (min-width: 1200px) {
   .how {
     width: 1440px;
-    height: 700px;
-    padding: 72px 244px;
-    background-image: url("/img/how/How\ to\ Play\ \(1\).png");
+    height: 1106px;
+    padding: 100px 150px 0;
+    background-image: url("/img/How\ to\ play\ \(1\).png");
+  }
+  .how-list {
+    padding: 60px 21px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
   }
 }
 
-.characters {
-  padding: 53px 16px 0;
-  margin: auto;
-  width: 375px;
-  height: 1021px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-image: url("/img/characters/Characters.png");
-}
-
-.characters-list {
-  display: flex;
-  flex-direction: column;
-  padding-top: 52px;
-  gap: 32px;
-}
-.characters-item-two {
-  padding-top: 304px;
-}
-.characters-text-bold {
-  font-family: Lora;
-  font-size: 18px;
-  font-weight: 600;
-  line-height: 21.6px;
-  text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
-
-  color: #751a09;
-}
-.characters-text {
-  font-family: Lora;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 19.2px;
-  text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
-  padding-top: 8px;
-}
-
-@media screen and (min-width: 1200px) {
-  .characters {
-    padding: 72px 189px 81px;
-    width: 1440px;
-    height: 700px;
-    background-image: url("/img/characters/Characters\ \(1\).png");
-  }
-}
 .reviews {
   width: 375px;
-  height: 490px;
+  height: 485px;
   margin: auto;
-  padding: 64px 16px 0;
+  padding: 40px 0 0 16px;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: top;
-  background-image: url("/img/reviews/_User\ Reviews.png");
+  background-position: bottom;
+  background-image: url("/img/why/Features\ -\ Reviews.png");
 }
 
 .reviews-list {
-  width: auto;
-  padding-top: 54px;
-  padding-bottom: 29px;
+  padding-top: 32px;
 }
 .reviews-item {
-  margin: 0 5px;
+  margin: 0 4px;
+  width: 320px;
+  height: 327px;
+  padding-top: 32px;
+  padding-right: 24px;
+  padding-bottom: 32px;
+  padding-left: 24px;
+  border-radius: 4px;
+  background: #ffffff;
+  box-shadow: 0px 4px 30px 0px #00000040;
 }
-.reviews-item-top {
-  display: flex;
-  gap: 15px;
-  align-items: center;
-
-  height: 60px;
+.reviews-img {
+  margin: auto;
 }
 .reviews-text-bold {
-  font-family: Lora;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 23.04px;
-  letter-spacing: 0.03em;
-  text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
-  color: #ffffff;
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 140%;
+  letter-spacing: 0%;
+  height: 176px;
+  margin-top: 40px;
 }
 .reviews-text {
-  width: 343px;
-  height: 160px;
-  padding: 55px 16px 0;
-  border-radius: 10px;
-  background: #fff8f3b2;
-  backdrop-filter: blur(4px);
-  box-shadow: 0px 2px 6px 0px #0d427b40;
-  font-family: Lora;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 19.2px;
-  letter-spacing: 0.03em;
-  text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
-  color: #0a1346;
-  margin-top: 8px;
-}
-
-.gallery-button-container {
-  display: none;
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 140%;
+  letter-spacing: 0%;
+  text-align: right;
+  color: #7c8085;
 }
 
 @media screen and (min-width: 1200px) {
-  .gallery-button-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 32px;
-  }
-
-  .gallery-button {
-    background-color: transparent;
-    border: none;
-    padding: 0;
-    -webkit-transition: scale 0.3s ease;
-    transition: scale 0.3s ease;
-  }
-
-  .gallery-button:hover {
-    scale: 120%;
-  }
   .reviews {
     width: 1440px;
-    height: 595px;
-    padding: 84px 80px 0;
-    background-image: url("/img/reviews/User\ Reviews.png");
+    height: 653px;
+    padding: 100px 0 0 150px;
+    background-image: url("/img/why/Features\ -\ Reviews\ \(1\).png");
+  }
+  .reviews-list {
+    padding-top: 60px;
+  }
+  .reviews-item {
+    margin: 0 12px;
+    width: 326px;
+    height: 327px;
+    padding-top: 32px;
+    padding-right: 24px;
+    padding-bottom: 32px;
+    padding-left: 24px;
+    border-radius: 4px;
+  }
+
+  .reviews-text-bold {
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 140%;
+    letter-spacing: 0%;
+
+    height: 176px;
+    margin-top: 40px;
+  }
+  .reviews-text {
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 140%;
+    letter-spacing: 0%;
+    text-align: right;
+    color: #7c8085;
   }
 }
 
 .faq {
-  padding: 64px 16px 30px;
+  padding: 40px 16px;
   margin: auto;
   width: 375px;
-  min-height: 866px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: bottom;
-  background-image: url("/img/faq/FAQ.png");
 }
 .faq-container {
-  padding-top: 54px;
+  padding-top: 32px;
   display: flex;
   flex-direction: column;
-  gap: 16px;
-  margin: auto;
+  gap: 24px;
 }
 
 .faq-item {
-  background: #ffe6c4;
-  border: 2px solid #297d17;
-  padding: 16px;
-  border-radius: 12px;
+  padding-top: 32px;
+  padding-right: 24px;
+  padding-bottom: 32px;
+  padding-left: 24px;
+  border-radius: 4px;
+  background: #e9d6ff;
 }
 
 .faq-question {
@@ -751,14 +731,12 @@ a {
   justify-content: space-between;
   align-items: center;
 
-  font-family: Lora;
-  font-size: 18px;
+  font-family: Gantari;
   font-weight: 700;
-  line-height: 21.6px;
-  text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
-  color: #297d17;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-transform: uppercase;
 }
 
 .toggle-button {
@@ -770,182 +748,184 @@ a {
 
 .faq-answer {
   display: none;
-  padding-top: 16px;
-  font-family: Lora;
-  font-size: 16px;
+  padding-top: 8px;
+  font-family: Montserrat;
   font-weight: 500;
-  line-height: 19.2px;
-  text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
+  font-size: 18px;
+  line-height: 142%;
+  letter-spacing: 0%;
+  color: #7c8085;
 }
 @media screen and (min-width: 1200px) {
   .faq {
-    padding: 72px 300px;
+    padding: 100px 150px;
     width: 1440px;
-    background-image: url("/img/faq/FAQ\ \(1\).png");
   }
-}
-.gallery {
-  width: 375px;
-  height: 862px;
-  margin: auto;
-  padding: 64px 16px 0px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-image: url("/img/gallery/Gallery.png");
-}
-
-.gallery__list {
-  width: auto;
-  padding-top: 65px;
-  margin: auto;
-}
-.gallery__item {
-  width: 343px;
-  height: 610px;
-  overflow: hidden;
-  position: relative;
-  margin: 0 10px;
-}
-
-.gallery__image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-}
-
-@media screen and (min-width: 1200px) {
-  .gallery {
-    width: 1440px;
-    height: 1058px;
-
-    margin: auto;
-    padding: 72px 0 0;
-    background-image: url("/img/gallery/12657-NP185O\ 1.png");
+  .faq-container {
+    padding-top: 60px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
   }
 
-  .gallery__item {
-    width: 406px;
-    height: 721.78px;
-    margin: 0 10px;
-  }
-
-  .gallery__list {
-    padding: 82px 0 42px;
+  .faq-item {
+    width: 558px;
+    padding-top: 32px;
+    padding-right: 24px;
+    padding-bottom: 32px;
+    padding-left: 24px;
+    border-radius: 4px;
   }
 }
 .features {
   width: 375px;
   margin: auto;
-  padding: 64px 16px 89px;
+  padding: 40px 16px;
+  background: #ffffff;
 }
-
+.features-title {
+  color: #181b1d;
+}
 .features-list {
-  padding-top: 64px;
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
+  padding-top: 32px;
 }
 .features-item {
-  width: 163px;
-  height: 230px;
-  margin: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url("/img/features/Card\ \(1\).png");
+  width: 300px;
+  height: 300px;
+  padding-top: 84px;
+  padding-right: 34px;
+  padding-bottom: 42px;
+  padding-left: 34px;
+  margin: 0 10px;
+  color: #defc38;
 }
-.features-img {
-  margin: 16px auto;
+.features-item-two {
+  color: #0a6bff;
+  background-image: url("/img/features/Card\ \(2\).png");
+}
+.features-item-three {
+  background-image: url("/img/features/Card\ \(3\).png");
 }
 .features-text-bold {
-  height: 44px;
-
-  font-family: Lora;
-  font-size: 18px;
+  font-family: Gantari;
   font-weight: 700;
-  line-height: 21.6px;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 0%;
   text-align: center;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
+  text-transform: uppercase;
 }
 .features-text {
-  font-family: Lora;
-  font-size: 16px;
+  font-family: Montserrat;
   font-weight: 500;
-  line-height: 19.2px;
+  font-size: 18px;
+  line-height: 142%;
+  letter-spacing: 0%;
+
   text-align: center;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
+  padding-top: 16px;
 }
 
 @media screen and (min-width: 1200px) {
   .features {
     width: 1440px;
-    padding: 72px 270px 101px;
+    padding: 100px 0px 120px 150px;
+  }
+  .features-list {
+    padding-top: 60px;
+  }
+  .features-item {
+    width: 350px;
+    height: 350px;
+    padding-top: 113px;
+    padding-right: 34px;
+    padding-bottom: 32px;
+    padding-left: 34px;
+    margin: 0 15px;
+  }
+
+  .features-text-bold {
+    font-family: Gantari;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .features-text {
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 142%;
+    letter-spacing: 0%;
+    text-align: center;
+
+    padding-top: 16px;
   }
 }
 .footer {
-  background: linear-gradient(
-    0deg,
-    #297d17 -30.75%,
-    #ffbb5b 100.89%,
-    #cd946f 135.47%
-  );
+  background: #6913c0;
 
   color: #ffffff;
-  padding: 58px 16px 49px;
+  padding: 40px 0 32px;
 }
 .footer-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 25px;
+  gap: 24px;
 }
 
 .footer-wrapper {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 
   align-items: center;
 
-  gap: 4px;
+  gap: 14px;
 }
 .footer-text {
-  font-family: Lora;
-  font-size: 14px;
+  font-family: Montserrat;
   font-weight: 600;
-  line-height: 24px;
-  text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
+  font-size: 16px;
+  line-height: 110.00000000000001%;
+  letter-spacing: 0%;
+  text-transform: uppercase;
 
   text-decoration: none;
   color: #ffffff;
 }
 
 .footer-copyright {
-  font-family: Lora;
+  font-family: Montserrat;
+  font-weight: 500;
   font-size: 14px;
-  font-weight: 400;
-  line-height: 16px;
-  text-align: center;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
+  line-height: 140%;
+  letter-spacing: 0%;
+  vertical-align: middle;
 }
 
 @media screen and (min-width: 1200px) {
   .footer {
-    padding: 48px 199px;
+    padding: 92px 100px 60px;
+    width: 1440px;
+    margin: auto;
   }
   .footer-container {
     display: flex;
     flex-direction: row-reverse;
-    justify-content: end;
+    justify-content: center;
 
     align-items: center;
 
-    gap: 160px;
+    gap: 360px;
   }
 
   .footer-wrapper {
@@ -954,43 +934,63 @@ a {
     justify-content: end;
     align-items: end;
 
-    gap: 4px;
+    gap: 32px;
   }
   .footer-text {
-    font-family: Lora;
-    font-size: 16px;
+    font-family: Montserrat;
     font-weight: 600;
-    line-height: 24px;
-    text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
+    font-size: 16px;
+    line-height: 110.00000000000001%;
+    letter-spacing: 0%;
+    text-transform: uppercase;
   }
 
   .footer-copyright {
-    font-family: Lora;
-    font-size: 14px;
+    font-family: Montserrat;
     font-weight: 500;
-    line-height: 16px;
-    text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
+    font-size: 14px;
+    line-height: 140%;
+    letter-spacing: 0%;
+    vertical-align: middle;
   }
 }
 .policy-terms-container {
-  padding: 124px 16px 116px;
+  padding: 100px 16px 40px;
 }
 .policy-terms-title {
+  text-transform: uppercase;
+  font-family: Gantari;
+  font-weight: 800;
+  font-size: 46px;
+  line-height: 100%;
+  letter-spacing: 0%;
   text-transform: uppercase;
 }
 
 .policy-terms-text {
   padding-top: 20px;
+  font-family: Gantari;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-transform: uppercase;
 }
 .policy-terms-texts {
   padding-top: 8px;
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 142%;
+  letter-spacing: 0%;
 }
 .policy-terms-text-one {
   padding-top: 20px;
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 142%;
+  letter-spacing: 0%;
 }
 
 .terms-list {
@@ -998,11 +998,21 @@ a {
   padding: 20px 0 20px 25px;
   display: flex;
   flex-direction: column;
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 142%;
+  letter-spacing: 0%;
 }
 
 .terms-lists {
   list-style-type: disc;
   padding-left: 25px;
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 142%;
+  letter-spacing: 0%;
 }
 .email-link {
   color: inherit;
@@ -1014,22 +1024,27 @@ a {
 }
 @media screen and (min-width: 1200px) {
   .policy-terms-container {
-    padding: 186px 80px 116px;
+    padding: 124px 100px 60px;
+    width: 1440px;
+    margin: auto;
   }
   .policy-terms-title {
+    font-family: Gantari;
+    font-weight: 800;
+    font-size: 66px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: uppercase;
   }
 
   .policy-terms-text {
     padding-top: 40px;
-  }
-  .policy-terms-texts {
-  }
-  .policy-terms-text-one {
-    padding-top: 30px;
-  }
-
-  .terms-list {
-    padding: 20px 0 20px 25px;
+    font-family: Gantari;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: uppercase;
   }
 }
 
@@ -1038,11 +1053,8 @@ a {
   bottom: 10px;
   width: 375px;
 
-  padding: 30px;
-  border-radius: 20px;
-  background: rgba(255, 255, 255, 1);
-  border: 1px solid rgba(149, 49, 133, 1);
-  box-shadow: 0px 14px 42px 0px rgba(8, 15, 52, 0.06);
+  padding: 16px;
+  background: #ffffff;
 
   z-index: 1000;
 
@@ -1050,30 +1062,42 @@ a {
 }
 
 .cookie-popup-text-two {
-  font-family: Raleway;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 30px;
-  text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 142%;
+  letter-spacing: 0%;
 
-  color: rgba(87, 78, 68, 1);
+  color: #181b1d;
 }
 .cookie-button-container {
-  padding: 30px 0 0;
+  padding: 32px 0 0;
   margin: auto;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: 20px;
+  gap: 8px;
 }
 .cookie-button {
   border: none;
-  background-color: transparent;
+  background: #e9d6ff;
+  border: 1px solid #6913c0;
+  width: 167.5px;
+  border-radius: 4px;
+
+  padding: 16px 0;
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 110.00000000000001%;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+  color: #6913c0;
 }
 #accept-cookies {
+  background: #6913c0;
+  color: #ffffff;
 }
 .close-popup {
   position: absolute;
@@ -1084,29 +1108,27 @@ a {
 }
 @media screen and (min-width: 1200px) {
   .cookie-popup-text-two {
-    font-family: Raleway;
+    font-family: Montserrat;
+    font-weight: 500;
     font-size: 18px;
-    font-weight: 400;
-    line-height: 30px;
-    text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
+    line-height: 142%;
+    letter-spacing: 0%;
 
-    width: 648px;
+    width: 837px;
   }
   .cookie-button-container {
     padding: 0;
     margin: auto;
     display: flex;
-    flex-direction: row-reverse;
-    gap: 40px;
+    flex-direction: row;
+    gap: 24px;
   }
   .cookie-popup {
     position: fixed;
     bottom: 10px;
     width: 1440px;
 
-    padding: 52px;
+    padding: 40px;
     display: none;
   }
 
